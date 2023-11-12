@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tugas box</title>
+    <style>
+        .container {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        .row1 {
+        display: flex;
+        gap: 10px;}
+
+        .row1-green, .row3-grey {
+            background-color: aquamarine;
+            height: 100px;
+            flex-grow: 1;
+        }
+
+        .row1-cyan, .row3-blue {
+            background-color: rgb(98, 167, 144);
+            height: 100px;
+            flex-grow: 4;
+        }
+
+        .row2 {
+            display: flex;
+            gap: 10px;
+        }
+
+        .box1 {
+        background-color: beige;
+        height: 300px;
+        margin-right: 5px;
+        flex-grow: 1;
+        }
+
+        .box2 {
+        background-color: bisque;
+        height: 300px;
+        margin-right: 5px;
+        flex-grow: 2;
+        }
+
+        .box3 {
+        background-color: burlywood;
+        height: 300px;
+        margin-right: 5px;
+        flex-grow: 1;
+        }
+
+        .row4 {
+            background-color: rgb(79, 213, 222);
+            height: 100px;
+        }
+
+    </style>
+</head>
+<body>
+     <div class="container">
+        <div class="row1">
+            <div class="row1-green">row1-green</div>
+            <div class="row1-cyan">row1-cyan</div>
+        </div>
+        <div class="row2">
+                <div class="box1">Box 1</div>
+                <div class="box2">Box 2</div> 
+                <div class="box3">Box 3</div>
+        </div>
+        <div class="row4">row4</div>
+        <!-- tadi kurang penutup div buat si class container -->
+    </div>
+</body>
+</html>
+
+<!-- trus di css row2 itu lu pake flex-direction column, nah itu fungsinya buat misahin class biar beda kolom karena kita pengen satuin di row2 jadi gush pake flex column -->
+<!-- trus ntar ukurannya lu sesuain lagi aja -->
