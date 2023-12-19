@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hitung Bilangan Penjumlahan</title>
+  <style>
+    body {
+      margin-top: 50px;
+    }
+
+    input {
+      width: 50px;
+    }
+
+    #result {
+      font-size: 20px;
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+
+  <h2>Hitung Bilangan</h2>
+  <label for="number1">Bilangan 1:</label>
+  <input type="number" id="number1" onchange="calculate()">
+  <br>
+  <br/>
+  <label for="number2">Bilangan 2:</label>
+  <input type="number" id="number2" onchange="calculate()">
+
+  <div id="result">Hasil: 0</div>
+
+  <script>
+    function calculate() {
+      var num1 = document.getElementById('number1').value;
+      var num2 = document.getElementById('number2').value;
+
+      num1 = parseFloat(num1);
+      num2 = parseFloat(num2);
+
+      var result = num1 + num2;
+      document.getElementById('result').innerHTML = 'Hasil: ' + result;
+    }
+  </script>
+
+</body>
+</html>
