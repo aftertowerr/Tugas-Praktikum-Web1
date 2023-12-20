@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Halaman Login</title>
+</head>
+<body>
+    <h1>Halaman Login</h1>
+    <form onsubmit="Login()">
+        <label for="username">Username:</label>
+        <input type="text" name="username" id="username">
+        <br/>
+        <br/>
+        <label for="">Kode Pesanan:</label>
+        <input type="text" name="password" id="password">
+        <br/>
+        <br/>
+        <label for="">Tanggal Keberangkatan:</label>
+        <input type="date" name="date" id="date">
+        <br/>
+        <br/>
+        <label for="">Nomor Gate:</label>
+        <input type="number" name="number" id="number">
+        <br/>
+        <br/>
+        <input type="submit" value="Login">
+        <br/>
+        <br/>
+    </form>
+    <script>
+        function Login () {
+            let user = document.getElementById ("username")
+            let pw = document.getElementById ("password")
+            let tgl= document.getElementById ("date")
+            let nomor = document.getElementById ("number")
+
+            if (user === "admin" && pw === "123") {
+                alert ("Login Berhasil");
+            } else {
+                alert ("Login Gagal");
+            }
+        }
+    </script>
+</body>
+</html>
